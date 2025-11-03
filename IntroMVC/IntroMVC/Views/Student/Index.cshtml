@@ -1,0 +1,47 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<a class="btn btn-danger" href="/student/index">Index</a>
+<a class="btn btn-success" href="/student/create">Create</a>
+
+<h2>Index</h2>
+@*<table class="table table-bordered">
+    <tr>
+        <th>Name</th>
+        <th>Id</th>
+        <th>Cgpa</th>
+    </tr>
+    <tr>
+        <td>@ViewBag.S1</td>
+        <td>1</td>
+        <td>2.344</td>
+    </tr>
+    <tr>
+        <td>@ViewBag.S2</td>
+        <td>1</td>
+        <td>2.344</td>
+    </tr>
+    <tr>
+        <td>@ViewBag.S3</td>
+        <td>1</td>
+        <td>2.344</td>
+    </tr>
+</table>*@
+
+<table class="table table-bordered">
+    <tr>
+        <th>Name</th>
+        <th>Id</th>
+        <th>Cgpa</th>
+    </tr>
+    @foreach (var item in Model) { 
+        <tr>
+            <td>@item.Name</td>
+            <td>@item.Id</td>
+            <td>@item.Cgpa</td>
+        </tr>
+    }
+</table>
+
