@@ -66,5 +66,12 @@ namespace IntroMVC.Controllers
         //{
         //    return View();
         //}
+        public ActionResult Dashboard() {
+            if (true) {
+                TempData["Msg"] = "User not logged in";
+                return RedirectToAction("Login","Home");
+            }
+            
+        }
     }
 }

@@ -15,14 +15,17 @@ namespace IntroMVC.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
 
-            return View();
+            return Redirect("https://www.aiub.edu");
         }
 
         public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";
+
+            return View();
+        }
+        public ActionResult Login() { 
 
             return View();
         }
