@@ -37,6 +37,8 @@ namespace IntroEF.Controllers
         [HttpGet]
         public ActionResult Edit(int id) {
             var data = db.Students.Find(id); //search with primary key
+            //db.Students.Remove(data);
+            //db.SaveChanges();
             return View(data);
         }
         [HttpPost]
